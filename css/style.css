@@ -180,7 +180,7 @@ a {
 
 .travel__info-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
   gap: 50px 70px;
   padding-bottom: 50px;
 }
@@ -194,4 +194,64 @@ a {
   font-size: 16px;
   line-height: 130%;
   color: #fff;
+}
+
+.offers {
+  margin-bottom: 100px;
+}
+
+.offers__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.offers__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 30px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #d9d9de;
+}
+
+.offers__link {
+  min-height: 256px;
+  padding: 16px 24px 19px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 130%;
+}
+
+.offers__link:nth-child(3),
+.offers__link:nth-child(6) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.offers__link-title {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.offers__link-title--big {
+  font-size: 24px;
+}
+
+.offers__price {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: auto;
+}
+
+.offers__country,
+.offers__time {
+  margin-bottom: 15px;
 }
