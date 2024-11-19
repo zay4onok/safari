@@ -137,3 +137,24 @@ a {
   text-align: center;
   margin-bottom: 15px;
 }
+
+.direction {
+  margin: 100px 0;
+}
+.direction__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.direction__item {
+  border: 1px solid #D9D9DE;
+}
+.direction__img {
+  width: 100%;
+  display: block;
+}
+.direction__title {
+  font-size: 16px;
+  padding: 10px 0 19px 14px;
+  line-height: 17px;
+}
