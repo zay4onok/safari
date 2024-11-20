@@ -513,8 +513,8 @@ a {
   cursor: pointer;
 }
 
-.booking__checkbox:checked + .booking__checkbox-style::before{
-  content: '';
+.booking__checkbox:checked + .booking__checkbox-style::before {
+  content: "";
   position: absolute;
   width: 16px;
   height: 16px;
@@ -522,4 +522,49 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.footer {
+  padding: 80px 0;
+  background-color: #1f1e1e;
+}
+.footer__logo {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 830px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 130%;
+}
+.footer__info {
+  width: 225px;
+}
+.footer__wrapper-title {
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+.footer__copy {
+  margin-bottom: 3px;
+  opacity: 0.8;
+}
+.footer__link {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+.footer__adress {
+  width: 165px;
+}
+.footer__contacts {
+  width: 210px;
+}
+.footer__adress-text {
+  opacity: 0.8;
+}
+.footer__contacts-text {
+  opacity: 0.8;
 }
