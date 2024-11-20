@@ -6,4 +6,21 @@ $(document).ready(function () {
     preloader: false,
     fixedContentPos: false,
   });
+  $(".gallery__slider").slick({
+    prevArrow:
+      '<button type="button" class="slick-btn slick-prev"><img src="images/arrow-left.svg" alt="" /></button>',
+    nextArrow:
+      '<button type="button" class="slick-btn slick-next"><img src="images/arrow-right.svg" alt="" /></button>',
+  });
+  $(".gallery__item-wrapper").magnificPopup({
+    delegate: "a",
+    type: "image",
+    tLoading: "Loading image #%curr%...",
+    mainClass: "mfp-img-mobile",
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1],
+    },
+  });
 });
