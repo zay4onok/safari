@@ -8,7 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 140%;
-  color: #1f1f1f;
+  color: #1f1e1e;
 }
 
 a {
@@ -400,7 +400,6 @@ a {
   font-weight: 700;
 }
 
-
 .tour__info {
   display: flex;
   justify-content: space-between;
@@ -421,5 +420,106 @@ a {
   font-weight: 500;
   font-size: 20px;
   line-height: 130%;
-  color: #1f1f1f;
+  color: #1f1e1e;
+}
+
+.booking {
+  color: #eaeaea;
+  padding: 75px 0;
+}
+
+.booking__title {
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 130%;
+  color: #1f1e1e;
+  text-align: center;
+}
+
+.booking__form {
+  max-width: 830px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.booking__input {
+  width: 256px;
+  height: 44px;
+  background-color: transparent;
+  border: 1px solid #d9d9de;
+  padding: 11px 14px 12px;
+  margin-bottom: 28px;
+  font-size: 16px;
+  outline-color: #886239;
+}
+
+.booking__input::placeholder,
+.booking__area::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #c4c4c4;
+}
+
+.booking__area {
+  width: 100%;
+  padding: 14px;
+  height: 112px;
+  border: 1px solid #d9d9de;
+  resize: none;
+  margin-bottom: 67px;
+  outline-color: #886239;
+}
+
+.booking__btn {
+  border: none;
+  padding: 20px 65px;
+  background-color: #886239;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.booking__label {
+  font-size: 16px;
+  line-height: 130%;
+  color: #1f1e1e;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+}
+
+.booking__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.booking__checkbox-style {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 2px;
+  position: absolute;
+  margin-left: -45px;
+  cursor: pointer;
+}
+
+.booking__checkbox:checked + .booking__checkbox-style::before{
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #886239;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
