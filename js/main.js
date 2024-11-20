@@ -24,4 +24,7 @@ $(function () {
       preload: [0, 1],
     },
   });
+  $(".menu__btn").on("click", function () {
+    $(".menu__list,.menu__btn").toggleClass("open");
+  });
 });

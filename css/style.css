@@ -70,8 +70,11 @@ a {
   width: 100%;
   border-top: 1px solid#fff;
   border-bottom: 1px solid#fff;
-  margin-top: 15;
+  margin-top: 15px;
   padding: 27px 0 24px;
+}
+.menu__btn {
+  display: none;
 }
 
 .menu__list {
@@ -80,6 +83,10 @@ a {
   align-items: center;
   color: #fff;
   font-size: 16px;
+}
+
+.menu__list.open {
+  right: -1px;
 }
 
 .menu__item {
@@ -265,6 +272,10 @@ a {
   line-height: 130%;
   text-align: center;
   margin-bottom: 45px;
+}
+
+.map__iframe {
+  max-width: 100%;
 }
 
 .about {
@@ -567,4 +578,136 @@ a {
 }
 .footer__contacts-text {
   opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .header__phone span {
+    display: none;
+  }
+  .header__title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 690px) {
+  .header__top {
+    padding: 16px 0 25px;
+  }
+  .header__title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 540px) {
+  .logo {
+    margin-bottom: 20px;
+  }
+  .header__phone {
+    margin-bottom: 10px;
+  }
+  .header__phone-number {
+    margin-left: 0px;
+  }
+  .header__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header__top {
+    padding-bottom: 0;
+  }
+  .header__phone {
+    margin-bottom: 10px;
+  }
+  .menu {
+    border: none;
+    padding-bottom: 0;
+  }
+  .menu__btn {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1100;
+    padding: 0;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: #886239;
+  }
+
+  .menu__btn-style {
+    background-color: #fff;
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 1px);
+  }
+
+  .menu__btn::after,
+  .menu__btn::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    background-color: #fff;
+    height: 2px;
+    transition: all 0.3s;
+  }
+
+  .menu__btn::before {
+    top: 15px;
+  }
+
+  .menu__btn::after {
+    bottom: 15px;
+  }
+
+  .menu__btn.open::before {
+    transform: rotate(45deg);
+    top: 24px;
+  }
+
+  .menu__btn.open::after {
+    transform: rotate(-45deg);
+    bottom: 24px;
+  }
+
+  .menu__btn.open .menu__btn-style {
+    transform: scale(0);
+  }
+
+  .menu__list {
+    display: block;
+    padding: 125px 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: -500px;
+    height: 100vh;
+    background-color: #886239;
+    transition: right 0.4s ease;
+    width: 200px;
+    font-size: 18px;
+  }
+  .menu__item {
+    margin-bottom: 50px;
+  }
+  .menu__item:hover::after {
+    width: 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .logo__img {
+    max-width: 230px;
+  }
+  .header__phone-number {
+    font-size: 14px;
+    padding: 12px 20px 13px;
+  }
 }
