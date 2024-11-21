@@ -494,6 +494,7 @@ a {
   text-decoration: underline;
   display: flex;
   align-items: center;
+  padding-left: 50px;
 }
 
 .booking__checkbox {
@@ -602,19 +603,6 @@ a {
 }
 
 @media (max-width: 900px) {
-  .header__phone span {
-    display: none;
-  }
-  .header__title {
-    font-size: 70px;
-  }
-  .offers__wrapper {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-}
-
-@media (max-width: 800px) {
   .header {
     margin-bottom: 50px;
   }
@@ -639,6 +627,28 @@ a {
   .tour {
     margin-bottom: 50px;
   }
+  .booking {
+    padding: 50px 0;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+  .header__phone span {
+    display: none;
+  }
+  .header__title {
+    font-size: 70px;
+  }
+  .offers__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .booking__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
   .tour__wrapper {
     column-count: 1;
   }
@@ -666,6 +676,11 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 696px) {
+  .booking__label {
+    padding-top: 30px;
+  }
+}
 
 @media (max-width: 690px) {
   .header__top {
@@ -679,7 +694,24 @@ a {
     background-position: left;
   }
 }
-
+@media (max-width: 650px) {
+  .footer__wrapper {
+    display: block;
+  }
+  .footer__info,
+  .footer__adress,
+  .footer__contacts {
+    margin: 0 auto;
+    width: 225px;
+    margin-bottom: 30px;
+  }
+  .footer__contacts {
+    margin-bottom: 0;
+  }
+  .footer__logo {
+    margin-bottom: 50px;
+  }
+}
 @media (max-width: 600px) {
   .tour__info {
     display: grid;
@@ -804,5 +836,8 @@ a {
   .header__phone-number {
     font-size: 14px;
     padding: 12px 20px 13px;
+  }
+  .footer__wrapper {
+    font-size: 12px;
   }
 }
