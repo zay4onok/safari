@@ -571,11 +571,24 @@ a {
   opacity: 0.8;
 }
 @media (max-width: 1150px) {
+  .tour__info {
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
   .gallery__item-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
   .gallery__item-link {
     margin: 0 auto;
+  }
+  .tour__info-item {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 130%;
+    color: #886239;
+    text-align: center;
   }
 }
 
@@ -602,6 +615,33 @@ a {
 }
 
 @media (max-width: 800px) {
+  .header {
+    margin-bottom: 50px;
+  }
+  .direction {
+    margin-bottom: 50px;
+  }
+  .travel__info {
+    margin-bottom: 50px;
+  }
+  .offers {
+    margin-bottom: 50px;
+  }
+  .map {
+    margin-bottom: 50px;
+  }
+  .about {
+    margin-bottom: 50px;
+  }
+  .gallery {
+    margin-bottom: 50px;
+  }
+  .tour {
+    margin-bottom: 50px;
+  }
+  .tour__wrapper {
+    column-count: 1;
+  }
   .gallety__top {
     flex-direction: column;
     justify-content: space-between;
@@ -616,10 +656,14 @@ a {
     display: none;
   }
   .slick-btn {
-    top: -3.20%;
+    top: -3.2%;
   }
   .slick-prev {
     right: auto;
+  }
+  .tour__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -633,6 +677,13 @@ a {
   .about__popup {
     width: 100%;
     background-position: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .tour__info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
