@@ -217,7 +217,7 @@ a {
 
 .offers__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   padding-bottom: 80px;
   border-bottom: 1px solid #d9d9de;
@@ -587,6 +587,10 @@ a {
   .header__title {
     font-size: 70px;
   }
+  .offers__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -699,6 +703,12 @@ a {
   }
   .menu__item:hover::after {
     width: 0;
+  }
+  .offers__wrapper {
+    display: block;
+  }
+  .offers__link + .offers__link{
+    margin-top: 30px;
   }
 }
 
